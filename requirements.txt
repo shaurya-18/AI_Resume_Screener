@@ -1,8 +1,5 @@
 streamlit
 pandas
 scikit-learn
-sentence-transformers
 PyPDF2
-spacy
-matplotlib
-nltk
+groq
