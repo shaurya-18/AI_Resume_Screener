@@ -16,7 +16,7 @@ from recommendation import (
 client = Groq(
     api_key=st.secrets["GROQ_API_KEY"]
 )
-st.write(client.models.list())
+
 def generate_ai_analysis(resume_text, job_description, ats_score, missing_skills):
 
     missing = ", ".join(missing_skills) if missing_skills else "None"
@@ -124,7 +124,7 @@ Give exactly five prioritized and actionable changes.
 Do not invent experience or skills.
 """
     response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
+        model="openai/gpt-oss-20b",
         messages=[
             {
                 "role": "system",
