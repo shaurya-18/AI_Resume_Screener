@@ -124,7 +124,7 @@ Give exactly five prioritized and actionable changes.
 Do not invent experience or skills.
 """
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="llama-3.3-8b-instant",
         messages=[
             {
                 "role": "system",
